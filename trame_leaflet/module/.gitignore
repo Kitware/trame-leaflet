@@ -1,0 +1,5 @@
+serve/*.map
+serve/*.html
+serve/*.common.*
+serve/*-light.*
+serve/*.umd.js
