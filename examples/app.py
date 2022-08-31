@@ -1,7 +1,5 @@
 from trame.app import get_server
-from trame.assets.local import LocalFileManager
 from trame.widgets import vuetify, leaflet
-from trame_client.widgets.core import Template
 from trame.ui.vuetify import SinglePageWithDrawerLayout
 
 
@@ -51,7 +49,6 @@ with SinglePageWithDrawerLayout(server) as layout:
                 )
                 # leaflet.VGeosearch(options=("options",{"provider": "OpenStreetMapProvider"}))
                 leaflet.LMarker(lat_lng=("markerLatLng", [51.504, -0.159]))
-
 
 
 # -----------------------------------------------------------------------------
