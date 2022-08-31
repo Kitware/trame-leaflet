@@ -160,10 +160,9 @@ class LGeoJson(HtmlElement):
             "visible",
             "options",
             "geojson",
-            "optionsStyle"
+            "optionsStyle",
         ]
         self._event_names += [("update_visible", "update:visible"), "ready"]
-        
 
 
 class LGridLayer(HtmlElement):
