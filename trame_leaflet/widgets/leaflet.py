@@ -1,5 +1,5 @@
 from trame_client.widgets.core import AbstractElement
-from trame_leaflet import module
+from .. import module
 
 
 class HtmlElement(AbstractElement):

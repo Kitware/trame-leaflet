@@ -1,3 +1,2 @@
 def test_import():
-    # from trame.widgets.leaflet import LMap  # noqa: F401
-    pass
+    from trame.widgets.leaflet import LMap  # noqa: F401
