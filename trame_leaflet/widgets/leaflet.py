@@ -252,6 +252,7 @@ class LMap(HtmlElement):
             "zoom",
             ("min_zoom", "minZoom"),
             ("max_zoom", "maxZoom"),
+            "paddingBottomRight",
             "paddingTopLeft",
             "padding",
             "worldCopyJump",
