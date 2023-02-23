@@ -296,7 +296,6 @@ class LMarker(HtmlElement):
             ("update_visible", "update:visible"),
             "ready",
             ("update_lat_lng", "update:latLng"),
-
         ]
 
 
