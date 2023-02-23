@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.1.0 (2023-02-23)
+### Feature
+* **snake_case:** Expose attribute following Python snake_case ([`e8f7273`](https://github.com/Kitware/trame-leaflet/commit/e8f7273dc41a2a4e45ce4a955daa9dac33d81f41))
+
 ## v1.0.3 (2023-02-23)
 ### Fix
 * **version:** Add __version__ ([`90cf51a`](https://github.com/Kitware/trame-leaflet/commit/90cf51ab2c59b1ed7b0a7c90c6a789a8b2d3a7be))
