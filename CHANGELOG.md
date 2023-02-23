@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.3 (2023-02-23)
+### Fix
+* **version:** Add __version__ ([`90cf51a`](https://github.com/Kitware/trame-leaflet/commit/90cf51ab2c59b1ed7b0a7c90c6a789a8b2d3a7be))
+
 ## v1.0.2 (2022-09-02)
 ### Fix
 * **ci:** Fix failing tests ([`1d5367a`](https://github.com/Kitware/trame-leaflet/commit/1d5367a465e74edfaf51491e4950f633b646bb43))
