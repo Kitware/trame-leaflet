@@ -295,8 +295,8 @@ class LMarker(HtmlElement):
         self._event_names += [
             ("update_visible", "update:visible"),
             "ready",
-            ("update_latLng", "update:latLng"),
-            ("update_lat_lng", "update:lat-lng"),
+            ("update_lat_lng", "update:latLng"),
+
         ]
 
 
