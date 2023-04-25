@@ -1,5 +1,33 @@
+"""Leaflet Widgets only support vue2 for now.
+"""
 from trame_client.widgets.core import AbstractElement
 from .. import module
+
+__all__ = [
+    "LCircle",
+    "LCircleMarker",
+    "LControl",
+    "LControlAttribution",
+    "LControlLayers",
+    "LControlScale",
+    "LControlZoom",
+    "LFeatureGroup",
+    "LGeoJson",
+    "LGridLayer",
+    "LIcon",
+    "LImageOverlay",
+    "LLayerGroup",
+    "LMap",
+    "LMarker",
+    "LPolygon",
+    "LPolyline",
+    "LPopup",
+    "LRectangle",
+    "LTileLayer",
+    "LTooltip",
+    "LWMSTileLayer",
+    "VGeosearch",
+]
 
 
 class HtmlElement(AbstractElement):
