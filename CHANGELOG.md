@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.1.1 (2023-04-25)
+### Fix
+* **api:** Expose only meaningful classes ([`0b2a82e`](https://github.com/Kitware/trame-leaflet/commit/0b2a82eb831755eb8cf61d3eac875ff543f580f7))
+
 ## v1.1.0 (2023-02-23)
 ### Feature
 * **snake_case:** Expose attribute following Python snake_case ([`e8f7273`](https://github.com/Kitware/trame-leaflet/commit/e8f7273dc41a2a4e45ce4a955daa9dac33d81f41))
