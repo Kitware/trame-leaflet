@@ -1,4 +1,6 @@
-trame-leaflet
+.. |pypi_download| image:: https://img.shields.io/pypi/dm/trame-leaflet
+
+trame-leaflet |pypi_download|
 ===========================================================================
 
 trame-leaflet extends trame **widgets** with components from vue-leaflet.
