@@ -18,3 +18,10 @@ Using the Python library
 .. code-block:: python
 
     from trame.widgets import leaflet
+
+
+JavaScript dependency
+-----------------------------------------------------------
+
+This Python package bundle the ``leaflet@1.8.0`` and ``vue2-leaflet@2.7.1`` JavaScript libraries. If you would like us to upgrade it, `please reach out <https://www.kitware.com/trame/>`_.
+
