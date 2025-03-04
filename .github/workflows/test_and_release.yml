@@ -76,7 +76,7 @@ jobs:
 
       - name: Build Vue Components
         run: |
-          cd vue-components
+          cd vue2-components
           npm i
           npm run build
 
@@ -102,7 +102,7 @@ jobs:
 
       - name: Build Vue Components
         run: |
-          cd vue-components
+          cd vue2-components
           npm i
           npm run build
 
