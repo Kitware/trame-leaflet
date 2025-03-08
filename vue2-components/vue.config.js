@@ -1,6 +1,6 @@
 const path = require('path');
 const CopyPlugin = require('copy-webpack-plugin');
-const DST_PATH = '../trame_leaflet/module/serve';
+const DST_PATH = '../trame_leaflet/module/leaflet2/serve';
 
 module.exports = {
   outputDir: path.resolve(__dirname, DST_PATH),

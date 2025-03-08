@@ -1,7 +1,7 @@
-"""Leaflet Widgets only support vue2 for now.
-"""
+"""Leaflet Widgets only support vue2 for now."""
+
 from trame_client.widgets.core import AbstractElement
-from .. import module
+from ..module import leaflet2
 
 __all__ = [
     "LCircle",
@@ -34,7 +34,7 @@ class HtmlElement(AbstractElement):
     def __init__(self, _elem_name, children=None, **kwargs):
         super().__init__(_elem_name, children, **kwargs)
         if self.server:
-            self.server.enable_module(module)
+            self.server.enable_module(leaflet2)
 
 
 class LCircle(HtmlElement):
