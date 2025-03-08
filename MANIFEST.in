@@ -1,2 +1,3 @@
-graft trame_leaflet/module/serve
+graft trame_leaflet/module/leaflet2/serve
+graft trame_leaflet/module/leaflet3/vue3
 include trame_leaflet/LICENSE

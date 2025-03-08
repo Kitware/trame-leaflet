@@ -1,0 +1,436 @@
+trame_leaflet:
+  module:
+    leaflet3:
+      vue3:
+        scripts:
+          - ./dist/trame-leaflet3.umd.js
+        styles:
+          - ./dist/style.css
+        vue_use:
+          - TrameLeaflet3
+  widgets:
+    leaflet3:
+      LCircle:
+        component: l-circle
+        properties:
+          - name: attribution
+          - name: [bubbling_mouse_events, bubblingMouseEvents]
+          - name: [class_name, className]
+          - name: color
+          - name: [dash_array, dashArray]
+          - name: [dash_offset, dashOffset]
+          - name: fill
+          - name: [fill_color, fillColor]
+          - name: [fill_opacity, fillOpacity]
+          - name: [fill_rule, fillRule]
+          - name: interactive
+          - name: [lat_lng, latLng]
+          - name: [layer_type, layerType]
+          - name: [line_cap, lineCap]
+          - name: [line_join, lineJoin]
+          - name: name
+          - name: opacity
+          - name: options
+          - name: pane
+          - name: radius
+          - name: stroke
+          - name: visible
+          - name: weight
+        events:
+          - name: ready
+      LCircleMarker:
+        component: l-circle-marker
+        properties:
+          - name: attribution
+          - name: [bubbling_mouse_events, bubblingMouseEvents]
+          - name: [class_name, className]
+          - name: color
+          - name: [dash_array, dashArray]
+          - name: [dash_offset, dashOffset]
+          - name: fill
+          - name: [fill_color, fillColor]
+          - name: [fill_opacity, fillOpacity]
+          - name: [fill_rule, fillRule]
+          - name: interactive
+          - name: [lat_lng, latLng]
+          - name: [layer_type, layerType]
+          - name: [line_cap, lineCap]
+          - name: [line_join, lineJoin]
+          - name: name
+          - name: opacity
+          - name: options
+          - name: pane
+          - name: radius
+          - name: stroke
+          - name: visible
+          - name: weight
+        events:
+          - name: ready
+      LControl:
+        component: l-control
+        properties:
+          - name: [disable_click_propagation, disableClickPropagation]
+          - name: [disable_scroll_propagation, disableScrollPropagation]
+          - name: options
+          - name: position
+        events:
+          - name: ready
+      LControlAttribution:
+        component: l-control-attribution
+        properties:
+          - name: options
+          - name: position
+          - name: prefix
+        events:
+          - name: ready
+      LControlLayers:
+        component: l-control-layers
+        properties:
+          - name: [auto_zindex, autoZIndex]
+          - name: collapsed
+          - name: [hide_single_base, hideSingleBase]
+          - name: options
+          - name: position
+          - name: [sort_function, sortFunction]
+          - name: [sort_layers, sortLayers]
+        events:
+          - name: ready
+      LControlScale:
+        component: l-control-scale
+        properties:
+          - name: imperial
+          - name: [max_width, maxWidth]
+          - name: metric
+          - name: options
+          - name: position
+          - name: [update_when_idle, updateWhenIdle]
+        events:
+          - name: ready
+      LControlZoom:
+        component: l-control-zoom
+        properties:
+          - name: options
+          - name: position
+          - name: [zoom_in_text, zoomInText]
+          - name: [zoom_in_title, zoomInTitle]
+          - name: [zoom_out_text, zoomOutText]
+          - name: [zoom_out_title, zoomOutTitle]
+        events:
+          - name: ready
+      LFeatureGroup:
+        component: l-feature-group
+        properties:
+          - name: attribution
+          - name: [layer_type, layerType]
+          - name: name
+          - name: options
+          - name: pane
+          - name: visible
+        events:
+          - name: ready
+      LGeoJson:
+        component: l-geo-json
+        properties:
+          - name: attribution
+          - name: geojson
+          - name: [layer_type, layerType]
+          - name: name
+          - name: options
+          - name: [options_style, optionsStyle]
+          - name: pane
+          - name: visible
+        events:
+          - name: ready
+      LGridLayer:
+        component: l-grid-layer
+        properties:
+          - name: attribution
+          - name: [child_render, childRender]
+          - name: [class_name, className]
+          - name: [layer_type, layerType]
+          - name: [max_zoom, maxZoom]
+          - name: [min_zoom, minZoom]
+          - name: name
+          - name: [no_wrap, noWrap]
+          - name: opacity
+          - name: options
+          - name: pane
+          - name: [tile_size, tileSize]
+          - name: visible
+          - name: [zindex, zIndex]
+        events:
+          - name: ready
+      LIcon:
+        component: l-icon
+        properties:
+          - name: [bg_pos, bgPos]
+          - name: [class_name, className]
+          - name: [icon_anchor, iconAnchor]
+          - name: [icon_retina_url, iconRetinaUrl]
+          - name: [icon_size, iconSize]
+          - name: [icon_url, iconUrl]
+          - name: options
+          - name: [popup_anchor, popupAnchor]
+          - name: [shadow_anchor, shadowAnchor]
+          - name: [shadow_retinaUrl, shadowRetinaUrl]
+          - name: [shadow_size, shadowSize]
+          - name: [shadow_url, shadowUrl]
+          - name: [tooltip_anchor, tooltipAnchor]
+        events:
+          - name: ready
+      LImageOverlay:
+        component: l-image-overlay
+        properties:
+          - name: alt
+          - name: attribution
+          - name: bounds
+          - name: [class_name, className]
+          - name: [cross_origin, crossOrigin]
+          - name: [error_overlay_url, errorOverlayUrl]
+          - name: interactive
+          - name: [layer_type, layerType]
+          - name: name
+          - name: opacity
+          - name: options
+          - name: pane
+          - name: url
+          - name: visible
+          - name: [zindex, zIndex]
+        events:
+          - name: ready
+      LLayerGroup:
+        component: l-layer-group
+        properties:
+          - name: attribution
+          - name: [layer_type, layerType]
+          - name: name
+          - name: options
+          - name: pane
+          - name: visible
+        events:
+          - name: ready
+      LMap:
+        component: l-map
+        properties:
+          - name: [v_model_zoom, v-model:zoom]
+          - name: [v_model_center, v-model:center]
+          - name: [v_model_bounds, v-model:bounds]
+          - name: bounds
+            help: The bounds of the map
+          - name: [bounds_sync, bounds.sync]
+            help: The bounds of the map with .sync modifier
+          - name: center
+            help: The center of the map
+          - name: [center_sync, center.sync]
+            help: The center of the map with .sync modifier
+          - name: crs
+            help: >
+              The CRS to use for the map. Can be an object that defines a coordinate reference
+              system for projecting geographical points into screen coordinates and back
+              (see https://leafletjs.com/reference-1.7.1.html#crs-l-crs-base), or a string
+              name identifying one of Leaflet's defined CRSs, such as "EPSG4326".
+          - name: [ease_linearity, easeLinearity]
+          - name: [fade_animation, fadeAnimation]
+          - name: inertia
+          - name: [inertia_deceleration, inertiaDeceleration]
+          - name: [inertia_max_speed, inertiaMaxSpeed]
+          - name: [marker_zoom_animation, markerZoomAnimation]
+          - name: [max_bounds, maxBounds]
+            help: The max bounds of the map
+          - name: [max_bounds_viscosity, maxBoundsViscosity]
+          - name: [max_zoom, maxZoom]
+            help: The maxZoom of the map
+          - name: [min_zoom, minZoom]
+            help: The minZoom of the map
+          - name: [no_blocking_animations, noBlockingAnimations]
+          - name: options
+          - name: padding
+            help: The padding of the map
+          - name: [padding_bottom_right, paddingBottomRight]
+            help: The paddingBottomRight of the map
+          - name: [padding_top_left, paddingTopLeft]
+            help: The paddingTopLeft of the map
+          - name: [use_global_leaflet, useGlobalLeaflet]
+          - name: [world_copy_jump, worldCopyJump]
+            help: The worldCopyJump option for the map
+          - name: zoom
+            help: The zoom of the map
+          - name: [zoom_sync, zoom.sync]
+            help: The zoom of the map with .sync modifier
+          - name: [zoom_animation, zoomAnimation]
+          - name: [zoom_animation_threshold, zoomAnimationThreshold]
+        events:
+          - name: ready
+          - name: [update_zoom, update:zoom]
+          - name: [update_bounds, update:bounds]
+          - name: [update_center, update:center]
+      LMarker:
+        component: l-marker
+        properties:
+          - name: attribution
+          - name: draggable
+          - name: icon
+          - name: [lat_lng, latLng]
+          - name: [layer_type, layerType]
+          - name: name
+          - name: options
+          - name: pane
+          - name: visible
+          - name: [zindex_offset, zIndexOffset]
+        events:
+          - name: ready
+          - name: [move_end, moveend]
+      LPolygon:
+        component: l-polygon
+        properties:
+          - name: attribution
+          - name: [bubbling_mouse_events, bubblingMouseEvents]
+          - name: [class_name, className]
+          - name: color
+          - name: [dash_array, dashArray]
+          - name: [dash_offset, dashOffset]
+          - name: fill
+          - name: [fill_color, fillColor]
+          - name: [fill_opacity, fillOpacity]
+          - name: [fill_rule, fillRule]
+          - name: interactive
+          - name: [lat_lngs, latLngs]
+          - name: [layer_type, layerType]
+          - name: [line_cap, lineCap]
+          - name: [line_join, lineJoin]
+          - name: name
+          - name: [no_clip, noClip]
+          - name: opacity
+          - name: options
+          - name: pane
+          - name: [smooth_factor, smoothFactor]
+          - name: stroke
+          - name: visible
+          - name: weight
+        events:
+          - name: ready
+      LPolyline:
+        component: l-polyline
+        properties:
+          - name: attribution
+          - name: [bubbling_mouse_events, bubblingMouseEvents]
+          - name: [class_name, className]
+          - name: color
+          - name: [dash_array, dashArray]
+          - name: [dash_offset, dashOffset]
+          - name: fill
+          - name: [fill_color, fillColor]
+          - name: [fill_opacity, fillOpacity]
+          - name: [fill_rule, fillRule]
+          - name: interactive
+          - name: [lat_lngs, latLngs]
+          - name: [layer_type, layerType]
+          - name: [line_cap, lineCap]
+          - name: [line_join, lineJoin]
+          - name: name
+          - name: [no_clip, noClip]
+          - name: opacity
+          - name: options
+          - name: pane
+          - name: [smooth_factor, smoothFactor]
+          - name: stroke
+          - name: visible
+          - name: weight
+        events:
+          - name: ready
+      LPopup:
+        component: l-popup
+        properties:
+          - name: content
+          - name: [lat_lng, latLng]
+          - name: options
+        events:
+          - name: ready
+      LRectangle:
+        component: l-rectangle
+        properties:
+          - name: attribution
+          - name: bounds
+          - name: [bubbling_mouse_events, bubblingMouseEvents]
+          - name: [class_name, className]
+          - name: color
+          - name: [dash_array, dashArray]
+          - name: [dash_offset, dashOffset]
+          - name: fill
+          - name: [fill_color, fillColor]
+          - name: [fill_opacity, fillOpacity]
+          - name: [fill_rule, fillRule]
+          - name: interactive
+          - name: [lat_lngs, latLngs]
+          - name: [layer_type, layerType]
+          - name: [line_cap, lineCap]
+          - name: [line_join, lineJoin]
+          - name: name
+          - name: [no_clip, noClip]
+          - name: opacity
+          - name: options
+          - name: pane
+          - name: [smooth_factor, smoothFactor]
+          - name: stroke
+          - name: visible
+          - name: weight
+        events:
+          - name: ready
+      LTileLayer:
+        component: l-tile-layer
+        properties:
+          - name: attribution
+          - name: [class_name, className]
+          - name: [detect_retina, detectRetina]
+          - name: [layer_type, layerType]
+          - name: [max_zoom, maxZoom]
+          - name: [min_zoom, minZoom]
+          - name: name
+          - name: [no_wrap, noWrap]
+          - name: opacity
+          - name: options
+          - name: pane
+          - name: subdomains
+          - name: [tile_size, tileSize]
+          - name: tms
+          - name: url
+          - name: visible
+          - name: [zindex, zIndex]
+        events:
+          - name: ready
+      LTooltip:
+        component: l-tooltip
+        properties:
+          - name: content
+          - name: options
+        events:
+          - name: ready
+      LWmsTileLayer:
+        component: l-wms-title-layers
+        properties:
+          - name: attribution
+          - name: [class_name, className]
+          - name: crs
+          - name: [detect_retina, detectRetina]
+          - name: format
+          - name: [layer_type, layerType]
+          - name: layers
+          - name: [max_zoom, maxZoom]
+          - name: [min_zoom, minZoom]
+          - name: name
+          - name: [no_wrap, noWrap]
+          - name: opacity
+          - name: options
+          - name: pane
+          - name: styles
+          - name: subdomains
+          - name: [tile_size, tileSize]
+          - name: tms
+          - name: transparent
+          - name: uppercase
+          - name: url
+          - name: version
+          - name: visible
+          - name: [zindex, zIndex]
+        events:
+          - name: ready

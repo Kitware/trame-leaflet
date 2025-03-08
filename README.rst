@@ -23,5 +23,6 @@ Using the Python library
 JavaScript dependency
 -----------------------------------------------------------
 
-This Python package bundle the ``leaflet@1.8.0`` and ``vue2-leaflet@2.7.1`` JavaScript libraries. If you would like us to upgrade it, `please reach out <https://www.kitware.com/trame/>`_.
-
+This Python package bundle the ``leaflet@1.8.0`` and ``vue2-leaflet@2.7.1`` JavaScript libraries. 
+For vue3 we also bundle ``@vue-leaflet/vue-leaflet@0.10.1`` JavaScript librarie.
+If you would like us to upgrade it, `please reach out <https://www.kitware.com/trame/>`_.
