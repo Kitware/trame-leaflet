@@ -52,7 +52,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v5
       with:
         python-version: ${{ matrix.python-version }}
 
@@ -70,15 +70,29 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Set Up Node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: 14
+          node-version: 18
 
-      - name: Build Vue Components
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+    
+      - name: Build Vue2 Components
         run: |
-          cd vue2-components
+            cd vue2-components
+            npm i
+            npm run build
+      
+      - name: Build Vue3 Components
+        run: |
+          cd vue3-components
           npm i
           npm run build
+          pip install black trame PyYAML
+          python -m trame.tools.widgets --config ./api.yaml --output ..
+          black ../trame ../trame_leaflet
 
   release:
     needs: [
@@ -96,9 +110,9 @@ jobs:
           fetch-depth: 0
 
       - name: Set Up Node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: 14
+          node-version: 18
 
       - name: Build Vue Components
         run: |
