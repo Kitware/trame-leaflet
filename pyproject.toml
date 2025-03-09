@@ -1,6 +1,6 @@
 [project]
 name = "trame-leaflet"
-version = "1.2.3"
+version = "1.2.4"
 description = "Leaflet widget for trame"
 authors = [
     {name = "Kitware Inc."},

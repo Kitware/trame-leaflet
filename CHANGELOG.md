@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v1.2.4 (2025-03-09)
+
+### Bug Fixes
+
+- **api**: Add missing v-model
+  ([`c77289e`](https://github.com/Kitware/trame-leaflet/commit/c77289e447c70cfb0ba26c3056698d14873eb8a8))
+
+
 ## v1.2.3 (2025-03-09)
 
 ### Bug Fixes
