@@ -13,6 +13,7 @@ trame_leaflet:
       LCircle:
         component: l-circle
         properties:
+          - name: [v_model_visible, v-model:visible]
           - name: attribution
           - name: [bubbling_mouse_events, bubblingMouseEvents]
           - name: [class_name, className]
@@ -38,9 +39,11 @@ trame_leaflet:
           - name: weight
         events:
           - name: ready
+          - name: [update_visible, update:visible]
       LCircleMarker:
         component: l-circle-marker
         properties:
+          - name: [v_model_visible, v-model:visible]
           - name: attribution
           - name: [bubbling_mouse_events, bubblingMouseEvents]
           - name: [class_name, className]
@@ -66,6 +69,7 @@ trame_leaflet:
           - name: weight
         events:
           - name: ready
+          - name: [update_visible, update:visible]
       LControl:
         component: l-control
         properties:
@@ -120,6 +124,7 @@ trame_leaflet:
       LFeatureGroup:
         component: l-feature-group
         properties:
+          - name: [v_model_visible, v-model:visible]
           - name: attribution
           - name: [layer_type, layerType]
           - name: name
@@ -128,9 +133,11 @@ trame_leaflet:
           - name: visible
         events:
           - name: ready
+          - name: [update_visible, update:visible]
       LGeoJson:
         component: l-geo-json
         properties:
+          - name: [v_model_visible, v-model:visible]
           - name: attribution
           - name: geojson
           - name: [layer_type, layerType]
@@ -141,9 +148,11 @@ trame_leaflet:
           - name: visible
         events:
           - name: ready
+          - name: [update_visible, update:visible]
       LGridLayer:
         component: l-grid-layer
         properties:
+          - name: [v_model_visible, v-model:visible]
           - name: attribution
           - name: [child_render, childRender]
           - name: [class_name, className]
@@ -160,6 +169,7 @@ trame_leaflet:
           - name: [zindex, zIndex]
         events:
           - name: ready
+          - name: [update_visible, update:visible]
       LIcon:
         component: l-icon
         properties:
@@ -181,6 +191,7 @@ trame_leaflet:
       LImageOverlay:
         component: l-image-overlay
         properties:
+          - name: [v_model_visible, v-model:visible]
           - name: alt
           - name: attribution
           - name: bounds
@@ -198,9 +209,11 @@ trame_leaflet:
           - name: [zindex, zIndex]
         events:
           - name: ready
+          - name: [update_visible, update:visible]
       LLayerGroup:
         component: l-layer-group
         properties:
+          - name: [v_model_visible, v-model:visible]
           - name: attribution
           - name: [layer_type, layerType]
           - name: name
@@ -209,6 +222,7 @@ trame_leaflet:
           - name: visible
         events:
           - name: ready
+          - name: [update_visible, update:visible]
       LMap:
         component: l-map
         properties:
@@ -267,6 +281,8 @@ trame_leaflet:
       LMarker:
         component: l-marker
         properties:
+          - name: [v_model_visible, v-model:visible]
+          - name: [v_model_lat_lng, v-model:latLng]
           - name: attribution
           - name: draggable
           - name: icon
@@ -280,9 +296,12 @@ trame_leaflet:
         events:
           - name: ready
           - name: [move_end, moveend]
+          - name: [update_lat_lng, update:latLng]
+          - name: [update_visible, update:visible]
       LPolygon:
         component: l-polygon
         properties:
+          - name: [v_model_visible, v-model:visible]
           - name: attribution
           - name: [bubbling_mouse_events, bubblingMouseEvents]
           - name: [class_name, className]
@@ -309,9 +328,11 @@ trame_leaflet:
           - name: weight
         events:
           - name: ready
+          - name: [update_visible, update:visible]
       LPolyline:
         component: l-polyline
         properties:
+          - name: [v_model_visible, v-model:visible]
           - name: attribution
           - name: [bubbling_mouse_events, bubblingMouseEvents]
           - name: [class_name, className]
@@ -338,6 +359,7 @@ trame_leaflet:
           - name: weight
         events:
           - name: ready
+          - name: [update_visible, update:visible]
       LPopup:
         component: l-popup
         properties:
@@ -349,6 +371,7 @@ trame_leaflet:
       LRectangle:
         component: l-rectangle
         properties:
+          - name: [v_model_visible, v-model:visible]
           - name: attribution
           - name: bounds
           - name: [bubbling_mouse_events, bubblingMouseEvents]
@@ -376,9 +399,11 @@ trame_leaflet:
           - name: weight
         events:
           - name: ready
+          - name: [update_visible, update:visible]
       LTileLayer:
         component: l-tile-layer
         properties:
+          - name: [v_model_visible, v-model:visible]
           - name: attribution
           - name: [class_name, className]
           - name: [detect_retina, detectRetina]
@@ -398,6 +423,7 @@ trame_leaflet:
           - name: [zindex, zIndex]
         events:
           - name: ready
+          - name: [update_visible, update:visible]
       LTooltip:
         component: l-tooltip
         properties:
@@ -408,6 +434,7 @@ trame_leaflet:
       LWmsTileLayer:
         component: l-wms-title-layers
         properties:
+          - name: [v_model_visible, v-model:visible]
           - name: attribution
           - name: [class_name, className]
           - name: crs
@@ -434,3 +461,4 @@ trame_leaflet:
           - name: [zindex, zIndex]
         events:
           - name: ready
+          - name: [update_visible, update:visible]
