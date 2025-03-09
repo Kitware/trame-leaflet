@@ -1,6 +1,17 @@
 # CHANGELOG
 
 
+## v1.2.2 (2025-03-09)
+
+### Bug Fixes
+
+- **ci**: Add missing dep
+  ([`2578827`](https://github.com/Kitware/trame-leaflet/commit/25788271b86af1ccc20ba251c3d74ceeb3831f0d))
+
+- **release**: Update build tech
+  ([`9751931`](https://github.com/Kitware/trame-leaflet/commit/9751931bf97a0000a0c2cea618b6a351c969cd85))
+
+
 ## v1.2.1 (2025-03-09)
 
 ### Bug Fixes
