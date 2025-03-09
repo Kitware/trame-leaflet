@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v1.2.3 (2025-03-09)
+
+### Bug Fixes
+
+- **release**: Trigger a release
+  ([`6ccfbb6`](https://github.com/Kitware/trame-leaflet/commit/6ccfbb686b5dfdf6bdf7f6a6f1be809de7aec85b))
+
+
 ## v1.2.2 (2025-03-09)
 
 ### Bug Fixes
