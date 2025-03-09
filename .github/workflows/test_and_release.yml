@@ -58,8 +58,7 @@ jobs:
 
     - name: Install and Run Tests
       run: |
-        pip install .
-        pip install -r tests/requirements.txt
+        pip install ".[test]"
         pytest -s ./tests
 
   test-npm-build:
