@@ -17,7 +17,15 @@ Using the Python library
 
 .. code-block:: python
 
-    from trame.widgets import leaflet
+    # for vue2
+    from trame.widgets import leaflet2 as leaflet
+
+    # for vue3
+    from trame.widgets import leaflet3 as leaflet
+
+    with leaflet.LMap(zoom=("zoom", 15), center=("center", [51.505, -0.159])):
+        leaflet.LTileLayer(url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png")
+        leaflet.LMarker(lat_lng=("markerLatLng", [51.504, -0.159]))
 
 
 JavaScript dependency
