@@ -2,6 +2,21 @@
 
 <!--next-version-placeholder-->
 
+## v1.2.0 (2025-03-09)
+
+### Feature
+
+* **vue3:** Add vue3 support ([`fed6e01`](https://github.com/Kitware/trame-leaflet/commit/fed6e01911517d5dd19a6393b8824f622eda0f42))
+
+### Fix
+
+* **vue2:** Rename old components to enable vue3 ([`eff4a7f`](https://github.com/Kitware/trame-leaflet/commit/eff4a7fe06c6e3395504f6121119be6c52050efa))
+
+### Documentation
+
+* **js:** List JS dependency ([`dd3d018`](https://github.com/Kitware/trame-leaflet/commit/dd3d018a730e3a1dee06515ed1c09e95df09cb43))
+* Update README.rst ([`e7e8e2a`](https://github.com/Kitware/trame-leaflet/commit/e7e8e2a4300054c8773d205cdb84f06c9ac0612f))
+
 ## v1.1.1 (2023-04-25)
 ### Fix
 * **api:** Expose only meaningful classes ([`0b2a82e`](https://github.com/Kitware/trame-leaflet/commit/0b2a82eb831755eb8cf61d3eac875ff543f580f7))
