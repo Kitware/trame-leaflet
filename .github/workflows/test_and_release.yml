@@ -90,9 +90,10 @@ jobs:
           cd vue3-components
           npm i
           npm run build
-          pip install black trame PyYAML
+          pip install ruff trame PyYAML
           python -m trame.tools.widgets --config ./api.yaml --output ..
-          black ../trame ../trame_leaflet
+          cd ..
+          ruff format
 
   release:
     needs: [

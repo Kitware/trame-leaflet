@@ -1,3 +1,8 @@
 graft trame_leaflet/module/leaflet2/serve
 graft trame_leaflet/module/leaflet3/vue3
 include trame_leaflet/LICENSE
+prune examples
+prune tests
+prune visual_baseline
+prune vue2-components
+prune vue3-components
